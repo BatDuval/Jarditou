@@ -4,21 +4,27 @@ body {
     margin: 25px;
 }
 
-h2 {
-    font-family:  'Qwitcher Grypen';
-    font-size: 5em;
+/* header */
+
+.logo {
+    display: flex;
 }
 
-h3 {
-    font-family:  'Qwitcher Grypen';
-    font-size: 3em;
+.box {
+    width: 50%;
 }
 
-h1 {
+.jardi {
+    width: 250px;
+    height: auto;
+}
+
+span {
     font-family: 'Kablammo';
     font-size: 3em;
 }
 
+/* Image Promotionnelle */
 .promo {
     width: 100%;
 }
@@ -28,33 +34,51 @@ img {
     height: auto;
 }
 
+/* Nav + Footer */
 footer, .lien {
     background-color: black;
-    text-decoration: white;
     padding: 25px;
-    display: flex;
-    justify-content: space-around;
+    
 }
 
-a:visited {
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+li {
+    margin-left: 10px;
+}
+a {
     color: white;
 }
-fieldset{
-    width: 25%;
-}
 
-.logo {
-    display: flex;
-}
-
-.box {
-    display: flex;
-    width: 50%;
-}
-
-.jardi {
-    width: 250px;
-    height: auto;
+/* Partie Principale */
+h1 {
+    font-family:  'Qwitcher Grypen';
+    font-size: 5em;
+    font-weight: bolder;
+    animation-duration: 5s;
+    animation-name: glissement;
+    animation-iteration-count: infinite;
+  }
+  
+  .aller {
+    animation-direction: alternate-reverse;
+  }
+  
+  @keyframes glissement {
+    from {
+      margin-left: 75%;
+    }
+  
+    to {
+      margin-left: 0%;
+    }
+  }
+h2 {
+    font-family:  'Qwitcher Grypen';
+    font-size: 3em;
 }
 
 .Accueil {
@@ -82,13 +106,48 @@ fieldset{
     margin: 50px 0 50px 0;
 }
 
+.boxagri {
+    display: flex;
+    justify-content: center;
+    
+}
+.agri {
+    width: 50%;
+    height: auto;
+    rotate: 45deg;
+    transition: 5s;
+}
+.agri:hover {
+    rotate: -45deg;
+    transition: 5s;
+}
+
+@keyframes rotate {
+    from {
+        rotate: -45deg;
+      }
+    
+      to {
+        rotate: 45deg;
+      }
+}
+
+/* page contact */
+
+
+fieldset{
+    width: 25%;
+}
+
 #sexe{
     margin: 20px 0 20px 0;
 }
 
-.jardin {
-    opacity: 0.5;
+.qs {
+    display: flex;
+    flex-direction: row;
 }
+
 
 
 @media screen and (max-width: 768px)
