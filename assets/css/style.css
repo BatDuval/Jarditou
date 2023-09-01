@@ -1,4 +1,6 @@
 body {
+    background-image: url('img/jardin.jpg');
+    background-size: cover;
     background: rgb(255,252,161);
     background: radial-gradient(circle, rgba(255,252,161,1) 0%, rgba(57,71,236,1) 7%, rgba(77,230,66,1) 13%, rgba(219,132,69,1) 20%, rgba(169,68,211,1) 28%, rgba(249,25,38,1) 38%, rgba(129,64,184,0.742734593837535) 42%, rgba(144,62,173,1) 45%, rgba(61,168,161,1) 52%, rgba(60,86,163,1) 58%, rgba(121,59,178,1) 65%, rgba(131,189,58,1) 70%, rgba(200,117,57,1) 75%, rgba(56,78,213,1) 81%, rgba(255,0,0,1) 87%, rgba(249,249,249,1) 94%, rgba(0,0,0,1) 100%);
     margin: 25px;
